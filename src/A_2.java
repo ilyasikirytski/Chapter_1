@@ -12,7 +12,7 @@ C:\Users\Admin\.jdks\openjdk-16.0.2\bin>java -Dfile.encoding=UTF-8 C:\Users\Admi
  */
 public class A_2 {
     public static void main(String[] args) {
-        for (int i = 0; i < args.length; i++){
+        for (int i = args.length - 1; i >=0; i--){
             System.out.printf("Аргумент %s -> %s%n", i, args[i]);
         }
     }
