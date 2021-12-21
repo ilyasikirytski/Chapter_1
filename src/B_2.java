@@ -8,7 +8,7 @@ public class B_2 {
         Scanner scanner = new Scanner(System.in);
         int number = scanner.nextInt();
         int[] arr = new int[number];
-        System.out.print("Введите целые числа через пробел " + "и нажмите <Enter>: ");
+        System.out.print("Введите целые числа через пробел и нажмите <Enter>:");
         for (int i = 0; i < number; i++) {
             arr[i] = scanner.nextInt();
         }
