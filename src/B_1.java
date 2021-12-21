@@ -4,10 +4,11 @@ import java.util.Scanner;
 
 public class B_1 {
     public static void main(String[] args) {
-        System.out.println("Введите целые числа через пробел и нажмите <Enter>:");
+        System.out.println("Сколько целых чисел вы собираетесь ввести?");
         Scanner scan = new Scanner(System.in);
         int number = scan.nextInt();
         int[] arr = new int[number];
+        System.out.println("Введите целые числа через пробел и нажмите <Enter>:");
         for (int i = 0; i < arr.length; i++) {
             arr[i] = scan.nextInt();
         }
