@@ -14,14 +14,12 @@ public class B_2 {
         }
         int min = arr[0];
         for (int i = 0; i < number; i++) {
-            if (min > arr[i])
-                min = arr[i];
+            if (min > arr[i]) min = arr[i];
         }
         System.out.println("Минимльное число:" + min);
         int max = arr[0];
         for (int i = 0; i < number; i++) {
-            if (max < arr[i])
-                max = arr[i];
+            if (max < arr[i]) max = arr[i];
         }
         System.out.println("Максимальное число:" + max);
     }

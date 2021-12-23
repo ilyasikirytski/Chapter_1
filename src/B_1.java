@@ -13,8 +13,7 @@ public class B_1 {
             arr[i] = scan.nextInt();
         }
         for (int i = 0; i < number; i++) {
-            if (arr[i] % 2 != 0)
-                System.out.println("Нечётное число:" + arr[i]);
+            if (arr[i] % 2 != 0) System.out.println("Нечётное число:" + arr[i]);
             else if (arr[i] % 2 == 0) {
                 System.out.println("Чётное число:" + arr[i]);
             }

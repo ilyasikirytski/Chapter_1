@@ -8,7 +8,7 @@ public class A_2 {
         Scanner scan = new Scanner(System.in);
         String name = scan.nextLine();
         String[] arr = scan.delimiter().split(name);
-        for (int i = arr.length - 1; i >= 0; i--){
+        for (int i = arr.length - 1; i >= 0; i--) {
             System.out.printf("Аргумент %s -> %s%n", i, arr[i]);
         }
         scan.close();
