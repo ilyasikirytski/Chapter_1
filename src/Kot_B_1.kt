@@ -2,13 +2,13 @@
 
 fun main() {
     println("Введите целые числа через пробел и нажмите <Enter>:")
-    val scan = readLine()!!.split(" ").map { it.toInt() }
-    val arr = scan
-    for (i in arr.indices) {
-        if (arr[i] % 2 != 0) {
-            println("Нечётное число:" + arr[i])
-        } else if (arr[i] % 2 == 0) {
-            println("Чётное число:" + arr[i])
-        }
-    }
+    readLine()?.split(" ")
+            ?.forEach {
+                val number = it.toInt()
+                if (number % 2 != 0) {
+                    println("Нечётное число:$number")
+                } else {
+                    println("Чётное число:$number")
+                }
+            }
 }
