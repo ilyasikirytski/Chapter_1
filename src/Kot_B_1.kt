@@ -3,12 +3,12 @@
 fun main() {
     println("Введите целые числа через пробел и нажмите <Enter>:")
     readLine()?.split(" ")
-            ?.forEach {
-                val number = it.toInt()
-                if (number % 2 != 0) {
-                    println("Нечётное число:$number")
-                } else {
-                    println("Чётное число:$number")
-                }
+        ?.map(String::toInt)
+        ?.forEach { number ->
+            val name = when {
+                number % 2 != 0 -> "Нечётное"
+                else -> "Чётное"
             }
+            println("$name число:$number")
+        }
 }
